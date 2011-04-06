@@ -9,7 +9,7 @@
   <% if respond_to?(:sprockets_include_tag) %>
     <%= sprockets_include_tag %>
   <% else %>
-    <%- ["application.js", "controls.js", "dragdrop.js", "effects.js", "prototype.js"].each do |js| %>
+    <%- ["prototype.js", "effects.js", "application.js", "controls.js", "dragdrop.js"].each do |js| %>
       <%= javascript_include_tag "/tolk/#{js}" %>
     <%- end %>
   <% end %>
